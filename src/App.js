@@ -1,19 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
 import "./App.css";
 import Landing from "./components/Landing";
 import Library from "./components/Library";
 import Album from "./components/Album";
-import logo from './bloc_jams_logo.png';
-import { Navbar, Nav, NavItem, NavLink } from 'reactstrap'; 
 
-
-
-class App extends Component {
+ 
+ class App extends Component {
   render() {
     return (
       <div className="App">
@@ -25,7 +18,7 @@ class App extends Component {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item active">
-                  <Link to="/" className="nav-link">Landing</Link>
+                  <Link to="/" className="nav-link">Home</Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/library" className="nav-link">Library</Link>
